@@ -10,3 +10,7 @@ async function copyDirectory(name) {
 }
 await copyDirectory('images');
 await copyDirectory('certificates');
+
+// 기존 개인 도메인과 배포 정보를 빌드 결과에도 그대로 보존합니다.
+await cp(resolve('CNAME'), resolve(output, 'CNAME'), { force: true });
+await cp(resolve('DEPLOYMENT-NOTE.txt'), resolve(output, 'DEPLOYMENT-NOTE.txt'), { force: true });

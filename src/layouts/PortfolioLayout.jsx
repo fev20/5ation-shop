@@ -7,10 +7,8 @@ import Header from '../components/Header.jsx';
 import Hero from '../components/Hero.jsx';
 import Projects from '../components/Projects.jsx';
 import Skills from '../components/Skills.jsx';
-import { certificates } from '../data/certificateData.js';
 import { layoutOptions, sectionLabels } from '../data/layoutData.js';
-import { profile, contact } from '../data/profileData.js';
-import { projects } from '../data/projectData.js';
+import { certificates, contact, profile, projects } from '../data/siteData.js';
 import { resolveTheme } from '../utils/resolveTheme.js';
 
 export default function PortfolioLayout({ layoutId }) {
